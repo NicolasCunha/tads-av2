@@ -17,8 +17,6 @@ def listar_disciplinas():
 def criar_disciplina():
     requisicao = request.get_json()
 
-    print(requisicao)
-
     disciplina = Disciplina(
         nome=requisicao['nome'], carga_horaria=requisicao['carga_horaria'], ementa=requisicao['ementa'])
 
