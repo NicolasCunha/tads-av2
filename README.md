@@ -7,7 +7,7 @@ Relação escolhida:
 
 O projeto está estruturado da seguinte forma:
 
-- [server.py](server.py): arquivo responsável por inicializar o servidor do Flask e criar as tabelas do banco que ainda não criadas através do SQL Alchemy.
+- [server.py](server.py): arquivo responsável por inicializar o servidor do Flask e criar as tabelas do banco que ainda não foram criadas através do SQL Alchemy.
 - [config.py](config.py): arquivo que contém configurações do sistema, como porta do Flask e o diretório que o SQLAlchemy criará o arquivo do banco de dados.
 - [utils](utils): módulo que contém arquivos utilitários, como o arquivo [http_utils](utils/http_utils.py) utilizada conter constantes e métodos para padronizar criação de respostas dos endpoints.
 - [model](model): módulo que contém classes mapeadas como Model do SQLAlchemy, representando o banco de dados.
