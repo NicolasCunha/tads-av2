@@ -29,7 +29,7 @@ A relação entre as classes deste sistema - em outras palavras, o fluxo - seria
       return create_response(pessoas_dict, HTTP_OK)
     ```
 - Caso a requisição seja um "POST":
-  - Sistema tenta criar um registro no banco de dados referente ao contexto daquela rota a partir dos valores recebidos no corpo da requisição. Por exemplo, caso seja "Disciplina", será buscado as informações como nome, ementa e carga horária. O status padrão é [HTTP_OK](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200), porém, ao ocorrer um erro, e retornado [HTTP_ERROR](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/500).
+  - Sistema tenta criar um registro no banco de dados referente ao contexto daquela rota a partir dos valores recebidos no corpo da requisição. Por exemplo, caso seja "Disciplina", será buscado as informações como nome, ementa e carga horária. O status padrão é [HTTP_OK](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200), porém, ao ocorrer um erro, é retornado [HTTP_ERROR](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/500).
     ```python
     @app.route('/disciplina', methods=['post'])
     def criar_disciplina():
