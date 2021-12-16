@@ -9,7 +9,7 @@ O projeto está estruturado da seguinte forma:
 
 - [server.py](server.py): arquivo responsável por inicializar o servidor do Flask e criar as tabelas do banco que ainda não foram criadas através do SQL Alchemy.
 - [config.py](config.py): arquivo que contém configurações do sistema, como porta do Flask e o diretório que o SQLAlchemy criará o arquivo do banco de dados.
-- [utils](utils): módulo que contém arquivos utilitários, como o arquivo [http_utils](utils/http_utils.py) utilizada conter constantes e métodos para padronizar criação de respostas dos endpoints.
+- [utils](utils): módulo que contém arquivos utilitários, como o arquivo [http_utils](utils/http_utils.py) utilizada para conter constantes e métodos para padronizar criação de respostas dos endpoints.
 - [model](model): módulo que contém classes mapeadas como Model do SQLAlchemy, representando o banco de dados.
 - [endpoint](endpoint): módulo que contém arquivos responsáveis pelo mapeamento das rotas do Flask.
 - [videos](videos): pasta que contém vídeos dos testes do funcionamento das rotas. Os teste foram feitos utilizando a ferramenta [Insomnia](https://insomnia.rest/) no lugar do CURL devido ao ambiente Windows. Caso não seja possível reproduzir os vídeos no formato ".mkv", o [arquivo de descrição da pasta](videos/README.md) contém links para o YouTube com os vídeos.
